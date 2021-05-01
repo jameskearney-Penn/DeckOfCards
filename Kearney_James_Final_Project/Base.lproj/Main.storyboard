@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KBk-de-93v">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main MenuVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="MainMenuVC" customModule="Kearney_James_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Deck of Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33Z-B4-7iV">
+                                <rect key="frame" x="34" y="150" width="345" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="TBF-I0-HLq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-Kc-u1i">
+                                <rect key="frame" x="34" y="507" width="345" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="ysw-p9-jau"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="29"/>
+                                <state key="normal" title="Multiplayer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="MultiPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0J-oI-esA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itE-yt-zxP">
+                                <rect key="frame" x="34" y="674" width="345" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="U6v-bg-Y7X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="38"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6s-i4-NZR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VZ-bV-exY">
+                                <rect key="frame" x="35" y="420" width="345" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Fd8-Fm-fBe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="29"/>
+                                <state key="normal" title="Single Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segue_to_DeckOfCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0j-Sb-TNH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="33Z-B4-7iV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Qk-G0-Q1m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="itE-yt-zxP" secondAttribute="bottom" constant="106" id="1jz-Pd-b8b"/>
+                            <constraint firstItem="6pj-Kc-u1i" firstAttribute="leading" secondItem="itE-yt-zxP" secondAttribute="leading" id="8wd-gl-xfn"/>
+                            <constraint firstItem="33Z-B4-7iV" firstAttribute="leading" secondItem="6pj-Kc-u1i" secondAttribute="leading" id="95H-nA-yPn"/>
+                            <constraint firstItem="6pj-Kc-u1i" firstAttribute="top" secondItem="7VZ-bV-exY" secondAttribute="bottom" constant="31" id="MGD-3X-RC2"/>
+                            <constraint firstItem="7VZ-bV-exY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MfI-tn-88m"/>
+                            <constraint firstItem="6pj-Kc-u1i" firstAttribute="trailing" secondItem="itE-yt-zxP" secondAttribute="trailing" id="QMd-w7-hrO"/>
+                            <constraint firstItem="7VZ-bV-exY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="WEV-6r-n9X"/>
+                            <constraint firstItem="33Z-B4-7iV" firstAttribute="trailing" secondItem="6pj-Kc-u1i" secondAttribute="trailing" id="p8n-PN-R06"/>
+                            <constraint firstItem="33Z-B4-7iV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="puq-eB-TmH"/>
+                            <constraint firstItem="33Z-B4-7iV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="xr1-Lf-INm"/>
+                            <constraint firstItem="7VZ-bV-exY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yPf-gP-Kfr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Ac-4R-XBe"/>
+                    <connections>
+                        <segue destination="APS-lE-Rh5" kind="show" identifier="CardNumberSelector" id="OuK-B2-Ee2"/>
+                        <segue destination="hTq-kc-C7X" kind="presentation" identifier="MultiPlayer" modalTransitionStyle="crossDissolve" id="vmL-al-6C0"/>
+                        <segue destination="5Qj-ln-cpm" kind="unwind" identifier="unwindToViewController1" unwindAction="prepareForUnwindWithSegue:" id="AuL-Rb-Ini"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="5Qj-ln-cpm" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2040.5797101449277" y="181.47321428571428"/>
+        </scene>
+        <!--Card Number SelectorVC-->
+        <scene sceneID="wHy-E5-e9c">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="APS-lE-Rh5" customClass="CardNumberSelectorVC" customModule="Kearney_James_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EQf-VC-IZU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="52" translatesAutoresizingMaskIntoConstraints="NO" id="WpT-Pf-KD8">
+                                <rect key="frame" x="33" y="358" width="349" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="AWa-X8-PO1"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="Slider:" destination="APS-lE-Rh5" eventType="valueChanged" id="MgW-mh-Tn5"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number of Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtm-h6-8co">
+                                <rect key="frame" x="35" y="271" width="345" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="dSv-U8-gjh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQP-EV-BHu">
+                                <rect key="frame" x="180" y="413" width="54" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="c77-mo-Eti"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Single Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHz-Yn-UVC">
+                                <rect key="frame" x="35" y="146" width="345" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="2N6-qx-Mt1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQm-yh-6Ey">
+                                <rect key="frame" x="35" y="506" width="345" height="97"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="26"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="APS-lE-Rh5" eventType="touchUpInside" id="e4I-a8-EnM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Esw-Yg-j2r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oHz-Yn-UVC" firstAttribute="leading" secondItem="Esw-Yg-j2r" secondAttribute="leading" constant="35" id="2Y5-fq-Ma2"/>
+                            <constraint firstItem="Esw-Yg-j2r" firstAttribute="bottom" secondItem="fQm-yh-6Ey" secondAttribute="bottom" constant="259" id="2i0-yC-SKd"/>
+                            <constraint firstItem="WpT-Pf-KD8" firstAttribute="centerX" secondItem="nQP-EV-BHu" secondAttribute="centerX" id="BhJ-wj-N6v"/>
+                            <constraint firstItem="nQP-EV-BHu" firstAttribute="leading" secondItem="Esw-Yg-j2r" secondAttribute="leading" constant="180" id="HEg-CR-zYr"/>
+                            <constraint firstItem="Gtm-h6-8co" firstAttribute="top" secondItem="oHz-Yn-UVC" secondAttribute="bottom" constant="37" id="HLm-PF-tRw"/>
+                            <constraint firstItem="WpT-Pf-KD8" firstAttribute="top" secondItem="Gtm-h6-8co" secondAttribute="bottom" constant="34" id="NFd-c3-BTS"/>
+                            <constraint firstItem="WpT-Pf-KD8" firstAttribute="leading" secondItem="fQm-yh-6Ey" secondAttribute="leading" id="RU2-dA-en0"/>
+                            <constraint firstItem="oHz-Yn-UVC" firstAttribute="leading" secondItem="Gtm-h6-8co" secondAttribute="leading" id="Uwc-JX-4u7"/>
+                            <constraint firstItem="oHz-Yn-UVC" firstAttribute="top" secondItem="Esw-Yg-j2r" secondAttribute="top" constant="58" id="WbF-gL-uMA"/>
+                            <constraint firstItem="WpT-Pf-KD8" firstAttribute="trailing" secondItem="fQm-yh-6Ey" secondAttribute="trailing" id="WxS-V5-l75"/>
+                            <constraint firstItem="oHz-Yn-UVC" firstAttribute="trailing" secondItem="Gtm-h6-8co" secondAttribute="trailing" id="bhm-zY-SSo"/>
+                            <constraint firstItem="Gtm-h6-8co" firstAttribute="leading" secondItem="WpT-Pf-KD8" secondAttribute="leading" id="bm8-3b-M8D"/>
+                            <constraint firstItem="oHz-Yn-UVC" firstAttribute="centerX" secondItem="EQf-VC-IZU" secondAttribute="centerX" id="m6j-Bl-qrk"/>
+                            <constraint firstItem="Gtm-h6-8co" firstAttribute="trailing" secondItem="WpT-Pf-KD8" secondAttribute="trailing" id="n6B-eG-NIn"/>
+                            <constraint firstItem="fQm-yh-6Ey" firstAttribute="top" secondItem="nQP-EV-BHu" secondAttribute="bottom" constant="40" id="pSl-WA-CR2"/>
+                            <constraint firstItem="nQP-EV-BHu" firstAttribute="top" secondItem="WpT-Pf-KD8" secondAttribute="bottom" constant="26" id="rjR-ty-rXm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RJJ-qc-p9E"/>
+                    <connections>
+                        <outlet property="sliderVal" destination="nQP-EV-BHu" id="OKA-Cn-kJE"/>
+                        <segue destination="NAb-OR-Iwx" kind="show" identifier="DeckOfCards" animates="NO" id="paZ-g7-T9b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4w5-4F-r2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4325" y="-260"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u0V-rJ-W7y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="6Ew-nZ-zvd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="R45-hQ-8Xz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vf4-Gt-Oao">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XmR-Dj-9aV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xx-ES-uWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923.1884057971015" y="94.419642857142847"/>
+        </scene>
+        <!--Multi PlayerVC-->
+        <scene sceneID="NkG-LJ-fKs">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="sIK-Um-UcD" customClass="MultiPlayerVC" customModule="Kearney_James_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cjn-JE-XP3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui4-Ao-i0B">
+                                <rect key="frame" x="35" y="253" width="345" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Sg4-Au-mSH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="27"/>
+                                <state key="normal" title="Start a Game">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="StartAGame:" destination="sIK-Um-UcD" eventType="touchUpInside" id="b5u-EJ-CrW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MultiPlayer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wu-ut-iaT">
+                                <rect key="frame" x="35" y="130" width="345" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="dMJ-H2-fNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbw-73-MIx">
+                                <rect key="frame" x="58" y="570" width="299" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="QOu-eE-bLd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="27"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="MainMenu:" destination="sIK-Um-UcD" eventType="touchUpInside" id="5Pa-Aw-elw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsM-WR-Gng">
+                                <rect key="frame" x="35" y="379" width="345" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="M2t-YZ-fHM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="27"/>
+                                <state key="normal" title="Join Game">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segue_to_joinParty:" destination="sIK-Um-UcD" eventType="touchUpInside" id="qQD-qi-OEe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tY3-NY-CYb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XsM-WR-Gng" firstAttribute="centerX" secondItem="sbw-73-MIx" secondAttribute="centerX" id="1aW-lI-D1o"/>
+                            <constraint firstItem="ui4-Ao-i0B" firstAttribute="trailing" secondItem="XsM-WR-Gng" secondAttribute="trailing" id="5qi-RK-7Cv"/>
+                            <constraint firstItem="2wu-ut-iaT" firstAttribute="leading" secondItem="ui4-Ao-i0B" secondAttribute="leading" id="6V3-66-8dW"/>
+                            <constraint firstItem="sbw-73-MIx" firstAttribute="leading" secondItem="tY3-NY-CYb" secondAttribute="leading" constant="58" id="Fy4-BD-Mn0"/>
+                            <constraint firstItem="2wu-ut-iaT" firstAttribute="leading" secondItem="tY3-NY-CYb" secondAttribute="leading" constant="35" id="MyD-lb-LW3"/>
+                            <constraint firstItem="ui4-Ao-i0B" firstAttribute="top" secondItem="2wu-ut-iaT" secondAttribute="bottom" constant="35" id="U7S-ox-AWm"/>
+                            <constraint firstItem="2wu-ut-iaT" firstAttribute="trailing" secondItem="ui4-Ao-i0B" secondAttribute="trailing" id="WuE-1m-sNY"/>
+                            <constraint firstItem="tY3-NY-CYb" firstAttribute="bottom" secondItem="sbw-73-MIx" secondAttribute="bottom" constant="208" id="cFc-8k-ra0"/>
+                            <constraint firstItem="2wu-ut-iaT" firstAttribute="top" secondItem="tY3-NY-CYb" secondAttribute="top" constant="42" id="iko-bq-tfs"/>
+                            <constraint firstItem="XsM-WR-Gng" firstAttribute="top" secondItem="ui4-Ao-i0B" secondAttribute="bottom" constant="42" id="jKn-cZ-cY9"/>
+                            <constraint firstItem="2wu-ut-iaT" firstAttribute="centerX" secondItem="Cjn-JE-XP3" secondAttribute="centerX" id="lQl-Tm-CnI"/>
+                            <constraint firstItem="ui4-Ao-i0B" firstAttribute="leading" secondItem="XsM-WR-Gng" secondAttribute="leading" id="mag-Da-oW9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KFa-DM-OPC"/>
+                    <connections>
+                        <segue destination="ZWQ-ab-7YN" kind="show" identifier="CardSelectMulti" id="f6t-11-6xD"/>
+                        <segue destination="3cj-h1-ifY" kind="show" identifier="JoinPartySegue" id="hCJ-gM-pZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RY7-oA-0ms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3440.579710144928" y="1088.1696428571429"/>
+        </scene>
+        <!--Mutli Player Card Select-->
+        <scene sceneID="Mhe-7O-AC2">
+            <objects>
+                <viewController id="ZWQ-ab-7YN" customClass="MutliPlayerCardSelect" customModule="Kearney_James_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jfx-F9-EWB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="52" translatesAutoresizingMaskIntoConstraints="NO" id="5Oc-GC-Z3p">
+                                <rect key="frame" x="33" y="342" width="349" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="P7W-xG-PnS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Slider:" destination="ZWQ-ab-7YN" eventType="valueChanged" id="A6w-JX-xCY"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Party" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGg-qX-QBk">
+                                <rect key="frame" x="35" y="119" width="344" height="55"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Current Players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lz5-az-PUs">
+                                <rect key="frame" x="36" y="559" width="344" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="3IV-I4-mqp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIT-4x-L10">
+                                <rect key="frame" x="35" y="438" width="345" height="101"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="26"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="ZWQ-ab-7YN" eventType="touchUpInside" id="d9G-IM-NGI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKw-C0-J7w">
+                                <rect key="frame" x="253" y="632" width="127" height="52"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JN3-Ie-gvI">
+                                <rect key="frame" x="35" y="711" width="127" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ytW-cP-7so"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOF-BB-v9M">
+                                <rect key="frame" x="35" y="787" width="127" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="cua-0h-XV0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpA-7b-1TM">
+                                <rect key="frame" x="252" y="711" width="127" height="52"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ6-h7-Kav">
+                                <rect key="frame" x="253" y="787" width="127" height="52"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Cards per Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qi-4Q-2q3">
+                                <rect key="frame" x="34" y="281" width="344" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="bZ9-pa-eUi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game ID:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M4-NL-YKe">
+                                <rect key="frame" x="34" y="182" width="344" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="T6a-DY-D2j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eON-ym-bj3">
+                                <rect key="frame" x="126" y="379" width="163" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="jrk-Qr-Kah"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="1">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPX-HR-dTk">
+                                <rect key="frame" x="36" y="222" width="344" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="r5S-WF-0ip"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDs-uy-fvd">
+                                <rect key="frame" x="35" y="632" width="127" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="7Ry-os-ksW"/>
+                                    <constraint firstAttribute="width" constant="127" id="QA0-QR-9dR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0cN-q0-SU6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lz5-az-PUs" firstAttribute="trailing" secondItem="CKw-C0-J7w" secondAttribute="trailing" id="1mW-JP-8p9"/>
+                            <constraint firstItem="5Oc-GC-Z3p" firstAttribute="trailing" secondItem="HIT-4x-L10" secondAttribute="trailing" id="2FD-NS-f9g"/>
+                            <constraint firstItem="0M4-NL-YKe" firstAttribute="leading" secondItem="0cN-q0-SU6" secondAttribute="leading" constant="34" id="3O5-d0-DNw"/>
+                            <constraint firstItem="0M4-NL-YKe" firstAttribute="top" secondItem="CGg-qX-QBk" secondAttribute="bottom" constant="8" id="3ZH-gX-dQ3"/>
+                            <constraint firstItem="DDs-uy-fvd" firstAttribute="firstBaseline" secondItem="CKw-C0-J7w" secondAttribute="firstBaseline" id="3dO-UR-TaP"/>
+                            <constraint firstItem="CGg-qX-QBk" firstAttribute="top" secondItem="0cN-q0-SU6" secondAttribute="top" constant="31" id="6Kh-tC-dbN"/>
+                            <constraint firstItem="CKw-C0-J7w" firstAttribute="leading" secondItem="DDs-uy-fvd" secondAttribute="trailing" constant="91" id="7k5-Zl-7Vs"/>
+                            <constraint firstItem="CGg-qX-QBk" firstAttribute="centerX" secondItem="jfx-F9-EWB" secondAttribute="centerX" id="8Aq-LP-ihy"/>
+                            <constraint firstItem="CKw-C0-J7w" firstAttribute="trailing" secondItem="cQ6-h7-Kav" secondAttribute="trailing" id="A2m-1N-41D"/>
+                            <constraint firstItem="CKw-C0-J7w" firstAttribute="leading" secondItem="cQ6-h7-Kav" secondAttribute="leading" id="AkM-KT-Pas"/>
+                            <constraint firstItem="CGg-qX-QBk" firstAttribute="leading" secondItem="0cN-q0-SU6" secondAttribute="leading" constant="35" id="BSB-hu-2Dw"/>
+                            <constraint firstItem="dPX-HR-dTk" firstAttribute="leading" secondItem="Lz5-az-PUs" secondAttribute="leading" id="EbH-jR-K2g"/>
+                            <constraint firstItem="Lz5-az-PUs" firstAttribute="top" secondItem="HIT-4x-L10" secondAttribute="bottom" constant="20" id="Egf-LU-OTQ"/>
+                            <constraint firstItem="0cN-q0-SU6" firstAttribute="trailing" secondItem="0M4-NL-YKe" secondAttribute="trailing" constant="36" id="Kby-kn-gqO"/>
+                            <constraint firstItem="0M4-NL-YKe" firstAttribute="leading" secondItem="5qi-4Q-2q3" secondAttribute="leading" id="L5B-dq-t3N"/>
+                            <constraint firstItem="JN3-Ie-gvI" firstAttribute="firstBaseline" secondItem="EpA-7b-1TM" secondAttribute="firstBaseline" id="LlM-cR-1Eu"/>
+                            <constraint firstItem="dPX-HR-dTk" firstAttribute="centerX" secondItem="5Oc-GC-Z3p" secondAttribute="centerX" id="Mp7-l0-XyK"/>
+                            <constraint firstItem="5Oc-GC-Z3p" firstAttribute="top" secondItem="5qi-4Q-2q3" secondAttribute="bottom" constant="8" id="NMs-g7-5vT"/>
+                            <constraint firstItem="DDs-uy-fvd" firstAttribute="leading" secondItem="JN3-Ie-gvI" secondAttribute="leading" id="PIe-RP-YA1"/>
+                            <constraint firstItem="HIT-4x-L10" firstAttribute="leading" secondItem="DDs-uy-fvd" secondAttribute="leading" id="PK5-hZ-b0I"/>
+                            <constraint firstItem="CGg-qX-QBk" firstAttribute="leading" secondItem="5Oc-GC-Z3p" secondAttribute="leading" id="Qdk-IU-aLp"/>
+                            <constraint firstItem="HIT-4x-L10" firstAttribute="top" secondItem="eON-ym-bj3" secondAttribute="bottom" constant="24" id="RA6-qk-i9g"/>
+                            <constraint firstItem="CGg-qX-QBk" firstAttribute="centerX" secondItem="5Oc-GC-Z3p" secondAttribute="centerX" id="SJp-7W-77S"/>
+                            <constraint firstItem="eON-ym-bj3" firstAttribute="top" secondItem="5Oc-GC-Z3p" secondAttribute="bottom" constant="8" id="VcB-V1-0xO"/>
+                            <constraint firstItem="JN3-Ie-gvI" firstAttribute="leading" secondItem="GOF-BB-v9M" secondAttribute="leading" id="Xun-pQ-etb"/>
+                            <constraint firstItem="DDs-uy-fvd" firstAttribute="trailing" secondItem="JN3-Ie-gvI" secondAttribute="trailing" id="ZJ5-4U-uol"/>
+                            <constraint firstItem="CGg-qX-QBk" firstAttribute="trailing" secondItem="EpA-7b-1TM" secondAttribute="trailing" id="fbU-Zh-XXt"/>
+                            <constraint firstItem="GOF-BB-v9M" firstAttribute="top" secondItem="JN3-Ie-gvI" secondAttribute="bottom" constant="24" id="fjn-WV-zcO"/>
+                            <constraint firstItem="DDs-uy-fvd" firstAttribute="baseline" secondItem="CKw-C0-J7w" secondAttribute="baseline" id="ggN-AJ-3ye"/>
+                            <constraint firstItem="5Oc-GC-Z3p" firstAttribute="centerX" secondItem="eON-ym-bj3" secondAttribute="centerX" id="hvs-x7-pIV"/>
+                            <constraint firstItem="5qi-4Q-2q3" firstAttribute="top" secondItem="dPX-HR-dTk" secondAttribute="bottom" constant="22" id="ich-OK-qQJ"/>
+                            <constraint firstItem="JN3-Ie-gvI" firstAttribute="top" secondItem="DDs-uy-fvd" secondAttribute="bottom" constant="27" id="j4q-lh-qso"/>
+                            <constraint firstItem="dPX-HR-dTk" firstAttribute="trailing" secondItem="5Oc-GC-Z3p" secondAttribute="trailing" id="jHz-tz-gpw"/>
+                            <constraint firstItem="0M4-NL-YKe" firstAttribute="trailing" secondItem="5qi-4Q-2q3" secondAttribute="trailing" id="lcE-jL-TP3"/>
+                            <constraint firstItem="GOF-BB-v9M" firstAttribute="firstBaseline" secondItem="cQ6-h7-Kav" secondAttribute="firstBaseline" id="mnI-Rh-hLa"/>
+                            <constraint firstItem="dPX-HR-dTk" firstAttribute="top" secondItem="0M4-NL-YKe" secondAttribute="bottom" constant="8" id="naO-Sr-A3A"/>
+                            <constraint firstItem="HIT-4x-L10" firstAttribute="trailing" secondItem="Lz5-az-PUs" secondAttribute="trailing" id="o8F-HF-VVS"/>
+                            <constraint firstItem="GOF-BB-v9M" firstAttribute="baseline" secondItem="cQ6-h7-Kav" secondAttribute="baseline" id="teC-aY-IjQ"/>
+                            <constraint firstItem="JN3-Ie-gvI" firstAttribute="trailing" secondItem="GOF-BB-v9M" secondAttribute="trailing" id="uqU-Gb-5Uz"/>
+                            <constraint firstItem="DDs-uy-fvd" firstAttribute="top" secondItem="Lz5-az-PUs" secondAttribute="bottom" constant="20" id="xDJ-as-z44"/>
+                            <constraint firstItem="eON-ym-bj3" firstAttribute="leading" secondItem="0cN-q0-SU6" secondAttribute="leading" constant="126" id="xH2-D6-rf4"/>
+                            <constraint firstItem="0cN-q0-SU6" firstAttribute="bottom" secondItem="GOF-BB-v9M" secondAttribute="bottom" constant="23" id="y4l-C6-CL5"/>
+                            <constraint firstItem="EpA-7b-1TM" firstAttribute="leading" secondItem="JN3-Ie-gvI" secondAttribute="trailing" constant="90" id="yRm-AZ-h0D"/>
+                            <constraint firstItem="JN3-Ie-gvI" firstAttribute="baseline" secondItem="EpA-7b-1TM" secondAttribute="baseline" id="yur-t3-zK2"/>
+                            <constraint firstItem="5Oc-GC-Z3p" firstAttribute="leading" secondItem="HIT-4x-L10" secondAttribute="leading" id="zqh-mC-g8t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AaA-M9-xxL"/>
+                    <connections>
+                        <outlet property="gameID" destination="dPX-HR-dTk" id="mnt-Ou-90j"/>
+                        <outlet property="player1" destination="DDs-uy-fvd" id="EMg-l0-8Q2"/>
+                        <outlet property="player2" destination="CKw-C0-J7w" id="86z-Kt-pOv"/>
+                        <outlet property="player3" destination="JN3-Ie-gvI" id="U6q-SL-o5Y"/>
+                        <outlet property="player4" destination="EpA-7b-1TM" id="2u4-Xl-4A6"/>
+                        <outlet property="player5" destination="GOF-BB-v9M" id="UU2-ho-xQH"/>
+                        <outlet property="player6" destination="cQ6-h7-Kav" id="VVP-oX-QLc"/>
+                        <outlet property="slider" destination="5Oc-GC-Z3p" id="A9c-8t-hD7"/>
+                        <outlet property="sliderVal" destination="eON-ym-bj3" id="KYI-BH-mt8"/>
+                        <segue destination="NAb-OR-Iwx" kind="show" identifier="DeckOfCards" id="udZ-lE-PpX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQO-sr-sU4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4325" y="769"/>
+        </scene>
+        <!--Join Party-->
+        <scene sceneID="JqM-kZ-frC">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="3cj-h1-ifY" customClass="JoinParty" customModule="Kearney_James_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q06-DO-Lea">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Party " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWB-Ns-N6K">
+                                <rect key="frame" x="35" y="121" width="344" height="55"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Game ID:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whk-T6-m1M">
+                                <rect key="frame" x="35" y="206" width="344" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Gyy-6a-dxG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game ID" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-Ye-ujF">
+                                <rect key="frame" x="35" y="246" width="344" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Err-Ea-5yV">
+                                <rect key="frame" x="35" y="406" width="344" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="PAS-ED-ahB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="27"/>
+                                <state key="normal" title="Join Game">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="JoinGameButton:" destination="3cj-h1-ifY" eventType="touchUpInside" id="hTa-MC-pk9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BDi-g6-LvT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ha6-Ye-ujF" firstAttribute="top" secondItem="whk-T6-m1M" secondAttribute="bottom" constant="8" id="42j-hL-bxt"/>
+                            <constraint firstItem="whk-T6-m1M" firstAttribute="top" secondItem="JWB-Ns-N6K" secondAttribute="bottom" constant="30" id="QNF-fs-x7E"/>
+                            <constraint firstItem="Err-Ea-5yV" firstAttribute="leading" secondItem="ha6-Ye-ujF" secondAttribute="leading" id="VeK-Ki-cF4"/>
+                            <constraint firstItem="Err-Ea-5yV" firstAttribute="centerY" secondItem="Q06-DO-Lea" secondAttribute="centerY" id="Ygu-eS-I8s"/>
+                            <constraint firstItem="JWB-Ns-N6K" firstAttribute="top" secondItem="BDi-g6-LvT" secondAttribute="top" constant="33" id="dYo-pp-T5F"/>
+                            <constraint firstItem="JWB-Ns-N6K" firstAttribute="leading" secondItem="BDi-g6-LvT" secondAttribute="leading" constant="35" id="fE0-cR-QJJ"/>
+                            <constraint firstItem="whk-T6-m1M" firstAttribute="leading" secondItem="ha6-Ye-ujF" secondAttribute="leading" id="h6z-lE-uTV"/>
+                            <constraint firstItem="Err-Ea-5yV" firstAttribute="centerX" secondItem="ha6-Ye-ujF" secondAttribute="centerX" id="hGj-yd-ZYe"/>
+                            <constraint firstItem="JWB-Ns-N6K" firstAttribute="leading" secondItem="whk-T6-m1M" secondAttribute="leading" id="lPi-Gt-Bum"/>
+                            <constraint firstItem="whk-T6-m1M" firstAttribute="trailing" secondItem="ha6-Ye-ujF" secondAttribute="trailing" id="rea-Pt-oh6"/>
+                            <constraint firstItem="JWB-Ns-N6K" firstAttribute="trailing" secondItem="whk-T6-m1M" secondAttribute="trailing" id="suS-jN-fUj"/>
+                            <constraint firstItem="JWB-Ns-N6K" firstAttribute="centerX" secondItem="Q06-DO-Lea" secondAttribute="centerX" id="wrr-ci-bFW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="-1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="aXl-04-CwN"/>
+                    <connections>
+                        <outlet property="GameID" destination="ha6-Ye-ujF" id="5bT-cy-VQo"/>
+                        <segue destination="NAb-OR-Iwx" kind="show" identifier="JoinDeckOfCards" id="UTC-Xx-wPx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bvh-g4-Crn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4421.739130434783" y="1824.7767857142856"/>
+        </scene>
+        <!--Log In ScreenVC-->
+        <scene sceneID="CT9-J0-Hy1">
+            <objects>
+                <viewController id="5Iq-VH-lUO" customClass="LogInScreenVC" customModule="Kearney_James_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oDu-YE-IYm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvO-xV-mqd">
+                                <rect key="frame" x="35" y="242" width="345" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="ifv-4g-74N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veN-vk-mQp">
+                                <rect key="frame" x="35" y="598" width="94" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="3Di-lG-Ra8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SignIn:" destination="5Iq-VH-lUO" eventType="touchUpInside" id="zYf-39-wVM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z07-kY-U5Z">
+                                <rect key="frame" x="35" y="373" width="345" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="z6d-1E-NkD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cos-Y3-o3d">
+                                <rect key="frame" x="35" y="310" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gsV-g7-Ths"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="62A-jU-p0D">
+                                <rect key="frame" x="35" y="492" width="345" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="XZD-un-F4s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deck of Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6v-em-A7D">
+                                <rect key="frame" x="35" y="132" width="344" height="88"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wk-jX-p1b">
+                                <rect key="frame" x="35" y="428" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5GU-rK-04b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-YA-cER">
+                                <rect key="frame" x="285" y="598" width="95" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="8As-QC-7Xr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="2ra-TJ-kFP" kind="show" id="q4W-9J-61s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RTZ-kj-fcp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="veN-vk-mQp" firstAttribute="firstBaseline" secondItem="NgY-YA-cER" secondAttribute="firstBaseline" id="5Q4-Je-mvZ"/>
+                            <constraint firstItem="cos-Y3-o3d" firstAttribute="leading" secondItem="Z07-kY-U5Z" secondAttribute="leading" id="7sD-XE-3SX"/>
+                            <constraint firstItem="Z07-kY-U5Z" firstAttribute="top" secondItem="cos-Y3-o3d" secondAttribute="bottom" constant="23" id="95o-ms-iWq"/>
+                            <constraint firstItem="D6v-em-A7D" firstAttribute="leading" secondItem="yvO-xV-mqd" secondAttribute="leading" id="AS2-uh-W3l"/>
+                            <constraint firstItem="62A-jU-p0D" firstAttribute="leading" secondItem="veN-vk-mQp" secondAttribute="leading" id="Dc6-fv-w6Z"/>
+                            <constraint firstItem="yvO-xV-mqd" firstAttribute="leading" secondItem="cos-Y3-o3d" secondAttribute="leading" id="E9B-21-THb"/>
+                            <constraint firstItem="yvO-xV-mqd" firstAttribute="top" secondItem="D6v-em-A7D" secondAttribute="bottom" constant="22" id="F4O-Yh-B9C"/>
+                            <constraint firstItem="veN-vk-mQp" firstAttribute="top" secondItem="NgY-YA-cER" secondAttribute="top" id="MAL-4n-CCC"/>
+                            <constraint firstItem="cos-Y3-o3d" firstAttribute="top" secondItem="yvO-xV-mqd" secondAttribute="bottom" constant="22" id="VEP-gp-ds2"/>
+                            <constraint firstItem="Z07-kY-U5Z" firstAttribute="leading" secondItem="9Wk-jX-p1b" secondAttribute="leading" id="VTA-uz-VIQ"/>
+                            <constraint firstItem="9Wk-jX-p1b" firstAttribute="centerY" secondItem="oDu-YE-IYm" secondAttribute="centerY" id="WAk-2e-9zm"/>
+                            <constraint firstItem="D6v-em-A7D" firstAttribute="centerX" secondItem="oDu-YE-IYm" secondAttribute="centerX" id="WLz-zY-lbl"/>
+                            <constraint firstItem="RTZ-kj-fcp" firstAttribute="bottom" secondItem="veN-vk-mQp" secondAttribute="bottom" constant="172" id="XVt-CR-Eze"/>
+                            <constraint firstItem="yvO-xV-mqd" firstAttribute="trailing" secondItem="cos-Y3-o3d" secondAttribute="trailing" id="YXK-DO-iNl"/>
+                            <constraint firstItem="62A-jU-p0D" firstAttribute="trailing" secondItem="NgY-YA-cER" secondAttribute="trailing" id="Zbc-By-jv1"/>
+                            <constraint firstItem="9Wk-jX-p1b" firstAttribute="trailing" secondItem="62A-jU-p0D" secondAttribute="trailing" id="aXJ-DS-NqL"/>
+                            <constraint firstItem="9Wk-jX-p1b" firstAttribute="leading" secondItem="62A-jU-p0D" secondAttribute="leading" id="c6B-mT-Zs3"/>
+                            <constraint firstItem="veN-vk-mQp" firstAttribute="baseline" secondItem="NgY-YA-cER" secondAttribute="baseline" id="d7v-38-vxR"/>
+                            <constraint firstItem="D6v-em-A7D" firstAttribute="centerX" secondItem="yvO-xV-mqd" secondAttribute="centerX" id="jRW-Zc-gxt"/>
+                            <constraint firstItem="cos-Y3-o3d" firstAttribute="trailing" secondItem="Z07-kY-U5Z" secondAttribute="trailing" id="kP9-rC-E9M"/>
+                            <constraint firstItem="9Wk-jX-p1b" firstAttribute="top" secondItem="Z07-kY-U5Z" secondAttribute="bottom" constant="21" id="nqb-rl-KBY"/>
+                            <constraint firstItem="D6v-em-A7D" firstAttribute="leading" secondItem="RTZ-kj-fcp" secondAttribute="leading" constant="35" id="nw5-Em-BTP"/>
+                            <constraint firstItem="62A-jU-p0D" firstAttribute="top" secondItem="9Wk-jX-p1b" secondAttribute="bottom" constant="24" id="o1g-QB-j7s"/>
+                            <constraint firstItem="Z07-kY-U5Z" firstAttribute="trailing" secondItem="9Wk-jX-p1b" secondAttribute="trailing" id="p8o-vN-bjn"/>
+                            <constraint firstItem="veN-vk-mQp" firstAttribute="top" secondItem="62A-jU-p0D" secondAttribute="bottom" constant="72" id="vNa-uG-YT6"/>
+                            <constraint firstItem="D6v-em-A7D" firstAttribute="top" secondItem="RTZ-kj-fcp" secondAttribute="top" constant="44" id="voI-FC-1iP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="snk-Qg-H74"/>
+                    <connections>
+                        <outlet property="email" destination="Z07-kY-U5Z" id="OSA-nE-gvE"/>
+                        <outlet property="password" destination="62A-jU-p0D" id="ng9-ou-Rst"/>
+                        <segue destination="6Ew-nZ-zvd" kind="presentation" identifier="MainMenu" animates="NO" id="ETg-7S-D8L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWO-1d-4al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="93.75"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="iRh-CN-iGh">
+            <objects>
+                <viewController id="2ra-TJ-kFP" customClass="SignUp" customModule="Kearney_James_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgq-sC-xkS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NEW USER" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0PM-PT-4PO">
+                                <rect key="frame" x="35" y="133" width="345" height="65"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="42"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYx-Ep-4eY">
+                                <rect key="frame" x="35" y="374" width="345" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s1-6Q-gj3">
+                                <rect key="frame" x="35" y="673" width="345" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9mk-h5-wYn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="CreateAccount:" destination="2ra-TJ-kFP" eventType="touchUpInside" id="kfi-27-t7W"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D14-D6-305">
+                                <rect key="frame" x="35" y="488" width="345" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm1-sK-mM9">
+                                <rect key="frame" x="35" y="326" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RFG-Hu-R59"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trL-R4-NCj">
+                                <rect key="frame" x="35" y="440" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZbY-Sw-uvf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-DX-Zmx">
+                                <rect key="frame" x="35" y="597" width="345" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirm Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGO-T7-R0n">
+                                <rect key="frame" x="35" y="549" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HlH-Qs-tpG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfS-l4-m26">
+                                <rect key="frame" x="35" y="219" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5vV-bg-zsw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQ1-vG-jo9">
+                                <rect key="frame" x="35" y="267" width="345" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ga9-XD-eEj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0PM-PT-4PO" firstAttribute="trailing" secondItem="OfS-l4-m26" secondAttribute="trailing" id="0m1-dj-OCD"/>
+                            <constraint firstItem="0PM-PT-4PO" firstAttribute="leading" secondItem="Ga9-XD-eEj" secondAttribute="leading" constant="35" id="1FY-8F-gmR"/>
+                            <constraint firstItem="trL-R4-NCj" firstAttribute="top" secondItem="YYx-Ep-4eY" secondAttribute="bottom" constant="32" id="1d6-ZX-rnk"/>
+                            <constraint firstItem="D14-D6-305" firstAttribute="trailing" secondItem="JGO-T7-R0n" secondAttribute="trailing" id="5AW-Hg-EjD"/>
+                            <constraint firstItem="uMx-DX-Zmx" firstAttribute="trailing" secondItem="2s1-6Q-gj3" secondAttribute="trailing" id="5yL-2K-Kke"/>
+                            <constraint firstItem="uMx-DX-Zmx" firstAttribute="top" secondItem="JGO-T7-R0n" secondAttribute="bottom" constant="8" id="DSx-yX-O6a"/>
+                            <constraint firstItem="JGO-T7-R0n" firstAttribute="top" secondItem="D14-D6-305" secondAttribute="bottom" constant="27" id="Evy-g0-hsA"/>
+                            <constraint firstItem="OfS-l4-m26" firstAttribute="leading" secondItem="YQ1-vG-jo9" secondAttribute="leading" id="NGE-Dt-XbU"/>
+                            <constraint firstItem="D14-D6-305" firstAttribute="leading" secondItem="JGO-T7-R0n" secondAttribute="leading" id="NGh-3v-gaC"/>
+                            <constraint firstItem="OfS-l4-m26" firstAttribute="top" secondItem="0PM-PT-4PO" secondAttribute="bottom" constant="21" id="Pi5-Ge-9t1"/>
+                            <constraint firstItem="YYx-Ep-4eY" firstAttribute="trailing" secondItem="trL-R4-NCj" secondAttribute="trailing" id="Rzz-hf-mj9"/>
+                            <constraint firstItem="YQ1-vG-jo9" firstAttribute="leading" secondItem="Jm1-sK-mM9" secondAttribute="leading" id="Szj-eT-SHx"/>
+                            <constraint firstItem="trL-R4-NCj" firstAttribute="trailing" secondItem="D14-D6-305" secondAttribute="trailing" id="TTD-dJ-gpH"/>
+                            <constraint firstItem="D14-D6-305" firstAttribute="top" secondItem="trL-R4-NCj" secondAttribute="bottom" constant="8" id="URI-KM-iZu"/>
+                            <constraint firstItem="0PM-PT-4PO" firstAttribute="leading" secondItem="OfS-l4-m26" secondAttribute="leading" id="UYb-AW-jmx"/>
+                            <constraint firstItem="YYx-Ep-4eY" firstAttribute="top" secondItem="Jm1-sK-mM9" secondAttribute="bottom" constant="8" id="YCs-lQ-vlG"/>
+                            <constraint firstItem="2s1-6Q-gj3" firstAttribute="top" secondItem="uMx-DX-Zmx" secondAttribute="bottom" constant="42" id="by9-nf-vLL"/>
+                            <constraint firstItem="Jm1-sK-mM9" firstAttribute="top" secondItem="YQ1-vG-jo9" secondAttribute="bottom" constant="25" id="cUK-3i-6i8"/>
+                            <constraint firstItem="0PM-PT-4PO" firstAttribute="centerX" secondItem="hgq-sC-xkS" secondAttribute="centerX" id="g2l-MN-JuJ"/>
+                            <constraint firstItem="OfS-l4-m26" firstAttribute="trailing" secondItem="YQ1-vG-jo9" secondAttribute="trailing" id="jXr-dt-Rn6"/>
+                            <constraint firstItem="0PM-PT-4PO" firstAttribute="top" secondItem="Ga9-XD-eEj" secondAttribute="top" constant="45" id="kZg-Gx-EhG"/>
+                            <constraint firstItem="Jm1-sK-mM9" firstAttribute="leading" secondItem="YYx-Ep-4eY" secondAttribute="leading" id="lRP-Kp-SaB"/>
+                            <constraint firstItem="Jm1-sK-mM9" firstAttribute="trailing" secondItem="YYx-Ep-4eY" secondAttribute="trailing" id="lrI-vc-JWf"/>
+                            <constraint firstItem="YYx-Ep-4eY" firstAttribute="leading" secondItem="trL-R4-NCj" secondAttribute="leading" id="o19-Bf-3qh"/>
+                            <constraint firstItem="trL-R4-NCj" firstAttribute="leading" secondItem="D14-D6-305" secondAttribute="leading" id="ohd-6q-350"/>
+                            <constraint firstItem="uMx-DX-Zmx" firstAttribute="leading" secondItem="2s1-6Q-gj3" secondAttribute="leading" id="uxr-GX-LEo"/>
+                            <constraint firstItem="YQ1-vG-jo9" firstAttribute="top" secondItem="OfS-l4-m26" secondAttribute="bottom" constant="8" id="vQg-kF-W16"/>
+                            <constraint firstItem="JGO-T7-R0n" firstAttribute="leading" secondItem="uMx-DX-Zmx" secondAttribute="leading" id="wVv-ZW-Y8J"/>
+                            <constraint firstItem="JGO-T7-R0n" firstAttribute="trailing" secondItem="uMx-DX-Zmx" secondAttribute="trailing" id="wdO-KI-VH6"/>
+                            <constraint firstItem="YQ1-vG-jo9" firstAttribute="trailing" secondItem="Jm1-sK-mM9" secondAttribute="trailing" id="xKf-sX-bHi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ATA-mq-Ln3"/>
+                    <connections>
+                        <outlet property="email" destination="YYx-Ep-4eY" id="Hur-JC-VKD"/>
+                        <outlet property="password" destination="D14-D6-305" id="12i-GO-5yh"/>
+                        <outlet property="passwordConfirm" destination="uMx-DX-Zmx" id="DOq-Of-TY8"/>
+                        <outlet property="username" destination="YQ1-vG-jo9" id="3iZ-Pp-9hs"/>
+                        <segue destination="6Ew-nZ-zvd" kind="presentation" identifier="MainMenu" id="Msx-rB-KkO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I11-3y-FoT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="848.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B9Z-Bf-mYx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="hTq-kc-C7X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y5H-D7-L5f">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sIK-Um-UcD" kind="relationship" relationship="rootViewController" id="POt-iv-U43"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dS5-Yn-ela" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2529" y="1089"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Iki-IB-2uc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KBk-de-93v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KSo-Xm-1y0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Iq-VH-lUO" kind="relationship" relationship="rootViewController" id="0Lw-Kn-5Vq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOv-Xh-pyt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1368.1159420289855" y="93.75"/>
+        </scene>
+        <!--Deck Of CardsVC-->
+        <scene sceneID="3tU-xR-S3e">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="NAb-OR-Iwx" customClass="DeckOfCardsVC" customModule="Kearney_James_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FT0-9p-aof">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oke-uh-IX6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="szd-ot-bmj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTI-Lz-AjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6799" y="448"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UTC-Xx-wPx"/>
+        <segue reference="Msx-rB-KkO"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
